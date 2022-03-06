@@ -1,8 +1,9 @@
 package geolocator;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+//import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+//import org.apache.commons.lang3.builder.ToStringStyle;
 
+@lombok.Data
 public class GeoLocation {
 
     private String as;
@@ -19,10 +20,10 @@ public class GeoLocation {
     private String timezone;
     private String zip;
 	
-	public String toString()
+	/*public String toString()
 	{
 	return ReflectionToStringBuilder.toString(this, ToStringStyle.MULTI_LINE_STYLE);
-	}
+	}*/
 
     public String getAs() {
         return as;
